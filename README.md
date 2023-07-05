@@ -15,6 +15,13 @@ NEXT_PUBLIC_ENV=
 NEXT_PUBLIC_XDAI_NODE_URL=
 NEXT_PUBLIC_NODE_URL=
 NEXT_PUBLIC_INFURA_API_KEY=
+
+# config parameters
+NEXT_PUBLIC_BASE_ROUTE=
+NEXT_PUBLIC_NOTIFICATION_BASE_ROUTE=
+NEXT_PUBLIC_BACKEND_LINK=
+NEXT_PUBLIC_FRONTEND_LINK=
+NEXT_PUBLIC_AUTH_BASE_ROUTE=
 ```
 
 `NEXT_PUBLIC_ENV` value can be empty or `production`.
@@ -22,6 +29,13 @@ NEXT_PUBLIC_INFURA_API_KEY=
 `NEXT_PUBLIC_XDAI_NODE_URL` and `NEXT_PUBLIC_NODE_URL` are JRPC endpoints for xdai and mainnet (goerli in development env) networks.
 
 `NEXT_PUBLIC_INFURA_API_KEY` is the infura api key.
+
+The config parameters aren't necessary for running this project in development.
+`NEXT_PUBLIC_BASE_ROUTE`
+`NEXT_PUBLIC_AUTH_BASE_ROUTE` is the link for the authentication microservice
+`NEXT_PUBLIC_NOTIFICATION_BASE_ROUTE` is the link for the notification microservice
+
+`NEXT_PUBLIC_FRONTEND_LINK` and `NEXT_PUBLIC_BACKEND_LINK` are the links to the website frontend and the impact-graph api
 
 Then, run the development server:
 
